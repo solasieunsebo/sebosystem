@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEBO SYSTEM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="topbar">
+      <div class="headerWrap">
+        <div class="container nav-wrap">
+          <!-- 로고 -->
+          <a href="/" class="logo">
+            <img src="images/sebosystem.png" alt="SEBO SYSTEM" />
+          </a>
+          <!-- 햄버거 버튼 -->
+          <button class="hamburger" aria-label="메뉴 열기" id="hamburgerBtn">☰</button>
+
+          <!-- 모바일 메뉴 -->
+          <nav class="mobile-nav" id="mobileNav">
+            <button class="close-btn" id="closeBtn" aria-label="메뉴 닫기">✕</button>
+            <ul class="main-menu">
+              <li class="has-submenu">
+                <a href="submenu-toggle">회사소개</a>
+                <ul class="submenu">
+                  <li><a href="about.html">회사소개</a></li>
+                  <li><a href="history.html">회사연혁</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="submenu-toggle">사업안내</a>
+                <ul class="submenu">
+                  <li><a href="consulting.html">자동화 컨설팅</a></li>
+                  <li><a href="design.html">전장 설계</a></li>
+                  <li><a href="panel.html">Control Panel 제작</a></li>
+                  <li><a href="plc.html">PLC 프로그래밍</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="submenu-toggle">견적문의</a>
+                <ul class="submenu">
+                  <li><a href="contact.html">견적문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="overlay" id="overlay"></div>
+          <!-- PC 메뉴 -->
+          <nav class="nav">
+            <ul class="main-menu">
+              <li><a href="about.html">회사소개</a></li>
+              <li><a href="consulting.html">사업안내</a></li>
+              <li><a href="contact.html">견적문의</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 메가 드롭다운 -->
+        <div class="mega-dropdown">
+          <div class="container">
+            <div class="dropdown-column">
+              <a href="about.html">회사소개</a>
+              <a href="history.html">회사연혁</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="consulting.html">자동화 컨설팅</a>
+              <a href="design.html">전장설계</a>
+              <a href="panel.html">Control & Electric Panel 제작</a>
+              <a href="plc.html">PLC 프로그래밍</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="contact.html">온라인 문의</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Hero 섹션 -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>첨단 전장 설계로 미래를 연결합니다</h1>
+        <p class="sub">Precision. Innovation. Partnership.</p>
+        <p class="sub2">TAILORED SOLUTIONS FOR YOUR BUSINESS</p>
+      </div>
+      <div class="hero-bar">
+        <img src="images/hero3840T2.png" alt="하단 장식 이미지" />
+      </div>
+      <div class="hero-multiply-bar"></div>
+    </section>
+
+    <!-- 카드 섹션 -->
+    <section class="cards">
+      <article class="card">
+        <h3>회사소개</h3>
+        <p class="c1">세보시스템은 자동화와 제어 분야의<br />맞춤형 시스템을 제공합니다.</p>
+        <a class="btn ghost" href="about.html">VIEW MORE <span>＋</span></a>
+      </article>
+      <article class="card service">
+        <h3>사업안내</h3>
+        <p class="c2">자동화 시스템 설계 · 제작 · 유지보수까지<br />토탈 솔루션을 제공합니다.</p>
+        <a class="btn ghost" href="design.html">VIEW MORE <span>＋</span></a>
+      </article>
+      <article class="card contact">
+        <h3>견적문의</h3>
+        <p>010-8807-8983<br />FAX:&nbsp;&nbsp;031-415-8850<br />
+          E-mail: <span id="email"></span></p>
+        <a class="btn ghost" href="contact.html">VIEW MORE <span>＋</span></a>
+      </article>
+    </section>
+  </div>
+
+
+  <button id="backToTop" aria-label="상단으로 이동">↑</button>
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="container">
+      <p>경기도 안산시 상록구 해양3로 15, 1303호 (사동, 그랑시티 시그니처타워)</p>
+      <p>사업자번호: 554-02-00156 · 전화번호: 010-8807-8983 · 팩스: 031-415-8850 · 이메일: yc.ko@sebosystem.kr</p>
+      <p>&copy; 2025 SEBO SYSTEM. All rights reserved.</p>
+    </div>
+  </footer>
+
+<!-- 스크립트 -->
+
+<script src="js/main.js"></script>
+</body>
+</html>

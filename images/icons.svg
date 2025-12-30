@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+  <!-- ① 진단 / 분석 -->
+  <symbol id="icon-diagnosis" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="8" stroke="currentColor" fill="none" stroke-width="2"/>
+    <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <!-- ② 개선 / 자동화 워크플로우 -->
+  <symbol id="icon-workflow" viewBox="0 0 24 24">
+    <path d="M3 12h18M12 3v18" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M16 8l4 4-4 4M8 16l-4-4 4-4" stroke="currentColor" fill="none" stroke-width="2"/>
+  </symbol>
+
+  <!-- ③ 설계 / 기어 -->
+  <symbol id="icon-settings" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="3" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 
+      2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 
+      1.65 1.65 0 0 0-1 .51V19a2 2 0 1 1-4 0v-.09a1.65 
+      1.65 0 0 0-1-.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 
+      2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 
+      .33-1.82 1.65 1.65 0 0 0-.51-1H5a2 2 0 1 1 0-4h.09a1.65 
+      1.65 0 0 0 .51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 
+      2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 
+      1.82.33h.09a1.65 1.65 0 0 0 1-.51V5a2 2 0 1 1 4 
+      0v.09a1.65 1.65 0 0 0 1 .51 1.65 1.65 0 0 0 
+      1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 
+      1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 .51 1H19a2 
+      2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-.51 1z"
+      stroke="currentColor" fill="none" stroke-width="2"/>
+  </symbol>
+
+  <!-- ④ 결과 / 보고서 -->
+  <symbol id="icon-report" viewBox="0 0 24 24">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 
+      2h12a2 2 0 0 0 2-2V8l-6-6z"
+      stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M14 2v6h6" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M16 13H8" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M16 17H8" stroke="currentColor" fill="none" stroke-width="2"/>
+    <path d="M10 9H8" stroke="currentColor" fill="none" stroke-width="2"/>
+  </symbol>
+
+</svg>

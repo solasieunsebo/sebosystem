@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전장설계 | SEBO SYSTEM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 상단 네비 (메인과 동일) -->
+        <header class="topbar">
+            <div class="headerWrap">
+                <div class="container nav-wrap">
+                    <a href="index.html" class="logo">
+                        <img src="images/sebosystem.png" alt="SEBO SYSTEM">
+                    </a>
+                    <!-- 햄버거 버튼 -->
+                    <button class="hamburger" aria-label="메뉴 열기" id="hamburgerBtn">☰</button>
+                    <!-- 모바일 메뉴 -->
+                    <nav class="mobile-nav" id="mobileNav">
+                        <button class="close-btn" id="closeBtn" aria-label="메뉴 닫기">✕</button>
+                        <ul class="main-menu">
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">회사소개</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">회사소개</a></li>
+                                    <li><a href="history.html">회사연혁</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">사업안내</a>
+                                <ul class="submenu">
+                                    <li><a href="consulting.html">자동화 컨설팅</a></li>
+                                    <li><a href="design.html">전장 설계</a></li>
+                                    <li><a href="panel.html">Control Panel 제작</a></li>
+                                    <li><a href="plc.html">PLC 프로그래밍</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">견적문의</a>
+                                <ul class="submenu">
+                                    <li><a href="contact.html">견적문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="overlay" id="overlay"></div>
+
+                    
+                    <nav class="nav">
+                        <ul class="main-menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="consulting.html" class="active">사업안내</a></li>
+                            <li><a href="contact.html">견적문의</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mega-dropdown">
+                    <div class="container">
+                        <div class="dropdown-column">
+                            <a href="about.html">회사소개</a>
+                            <a href="history.html">회사연혁</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="consulting.html">자동화 컨설팅</a>
+                            <a href="design.html">전장설계</a>
+                            <a href="panel.html">Control & Electric Panel 제작</a>
+                            <a href="plc.html">PLC 프로그래밍</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="contact.html">온라인 문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Hero (페이지 전용 배경) -->
+        <section class="sub-hero sub-hero-bg">
+            <div class="sub-hero-menu">
+                <ul>
+                    <li><a href="consulting.html">자동화 컨설팅</a></li>
+                    <li><a href="design.html">전장설계</a></li>
+                    <li><a href="panel.html" class="active">Control & Electric Panel 제작</a></li>
+                    <li><a href="plc.html">PLC 프로그래밍</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="panel-visual-section">
+            <div class="visual-content container">
+                <div class="visual-img animate-left">
+                    <img src="images/panel-r.jpg" alt="전장판넬">
+                </div>
+                <div class="visual-text animate-tright">
+                    <h2>현장에서 바로 검증된 품질</h2>
+                    <p>수십 개 산업 현장에서 누적된 판넬 제작 경험으로<br>
+                        설계부터 납품까지 품질로 증명합니다.</p>
+                    <a href="contact.html" class="btn ghost strong">상담 문의</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 3. 타임라인 제작 프로세스 -->
+        <section class="panel-timeline">
+            <div class="section-title animate-center">
+                <p class="section-label">SEBO SYSTEM</p>
+                <h2>제작 프로세스</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-step">
+                    <div class="circle">01</div>
+                    <div class="content">
+                        <h3>요구 분석</h3>
+                        <p>시스템 구성 및 <br> 전압/전류 파악</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-step">
+                    <div class="circle">02</div>
+                    <div class="content">
+                        <h3>설계 & 도면</h3>
+                        <p>회로도, 배선 계획, <br> 보호 장치 구성</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-step">
+                    <div class="circle">03</div>
+                    <div class="content">
+                        <h3>부품 선정</h3>
+                        <p>국산/해외 부품 조달 및 <br> 호환성 검토</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-step">
+                    <div class="circle">04</div>
+                    <div class="content">
+                        <h3>제작 & 조립</h3>
+                        <p>기계 가공, 배선, 설치, <br> 내부 배치 완성</p>
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-step">
+                    <div class="circle">05</div>
+                    <div class="content">
+                        <h3>검증 & 출하</h3>
+                        <p>전압/절연/온도 <br> 테스트 후 출하</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 특징 / 강점 -->
+        <section class="panel-strength">
+            <div class="section-title animate-center">
+                <p class="section-label">SEBO SYSTEM</p>
+                <h2>제작의 강점</h2>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="icon">✔</div>
+                    <div class="text">
+                        <h3>국가 규격 준수</h3>
+                        <p>KC, IEC, UL 등 국제/국가 기준을 반영한 설계</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✔</div>
+                    <div class="text">
+                        <h3>맞춤형 설계</h3>
+                        <p>고객 시스템 조건에 맞춘 커스터마이징</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✔</div>
+                    <div class="text">
+                        <h3>내구성 강화</h3>
+                        <p>내습, 내진, 내진동 설계 적용</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✔</div>
+                    <div class="text">
+                        <h3>안전 및 보호</h3>
+                        <p>과전압, 과전류, 단락 보호 회로 내장</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 포트폴리오 / 사례 -->
+        <section class="service-features container">
+            <div class="section-title animate-center">
+                <p class="section-label">SEBO SYSTEM</p>
+                <h2>제작 사례</h2>
+            </div>
+
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <img src="images/consulting-1.png" alt="패널 사례 1">
+                    <p>자동차 생산 라인 제어 패널</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/consulting-1.png" alt="패널 사례 2">
+                    <p>제조 설비 통합 제어 패널</p>
+                </div>
+                <!-- 더 많은 사례 추가 -->
+            </div>
+        </section>
+
+
+        </section>
+        <!-- CTA -->
+        <section class="cta clean-cta animate-up">
+            <p class="cta-quote"><br>"현장을 이해하는 기술, <span class="font-diff">SEBO SYSTEM</span>에서 완성됩니다."</p>
+            <a href="contact.html" class="btn ghost strong">상담 문의</a>
+    </div>
+    </section>
+    <!-- 맨 위로 버튼 -->
+    <button id="backToTop" aria-label="상단으로 이동">↑</button>
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <p>경기도 안산시 상록구 해양3로 15, 1303호 (사동, 그랑시티 시그니처타워)</p>
+            <p>사업자번호: 554-02-00156 · 전화번호: 010-8807-8983 · 팩스: 031-415-8850 · 이메일: yc.ko@sebosystem.kr</p>
+            <p>&copy; 2025 SEBO SYSTEM. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 공통 스크립트 -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. 일반 애니메이션
+            const generalTargets = document.querySelectorAll(
+                '.animate-left, .animate-right, .animate-tright, .animate-tleft, .animate-center, .animate-up'
+            );
+            const generalObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        generalObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            generalTargets.forEach(target => generalObserver.observe(target));
+
+            // 2. 카드류 순차 애니메이션
+            const sequentialTargets = document.querySelectorAll('.process-card, .feature-card, .trust-card');
+            const sequentialObserver = new IntersectionObserver(entries => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, i * 150);
+                        sequentialObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            sequentialTargets.forEach(target => sequentialObserver.observe(target));
+
+            // 3. 타임라인 순차 애니메이션
+            const timelineSteps = document.querySelectorAll('.timeline-step');
+            const timelineLines = document.querySelectorAll('.timeline-line');
+            const timelineObserver = new IntersectionObserver(entries => {
+                let delay = 0;
+                timelineSteps.forEach((step, i) => {
+                    if (step.getBoundingClientRect().top < window.innerHeight) {
+                        setTimeout(() => {
+                            step.classList.add('visible');
+                            if (timelineLines[i]) {
+                                timelineLines[i].classList.add('visible');
+                            }
+                        }, delay);
+                        delay += 300;
+                        timelineObserver.unobserve(step);
+                    }
+                });
+            }, { threshold: 0.1 });
+            timelineSteps.forEach(step => timelineObserver.observe(step));
+
+            // ✅ 4. 타이핑 효과: 화면 진입 시 시작
+            const typeTarget = document.getElementById("type-text");
+            const typingObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const text = "정확한 설계는 품질의 시작입니다.";
+                        let i = 0;
+                        function type() {
+                            if (i < text.length) {
+                                typeTarget.innerHTML += text.charAt(i);
+                                i++;
+                                setTimeout(type, 80);
+                            } else {
+                                // 타이핑 완료되면 커서 제거 클래스 추가
+                                typeTarget.classList.add('typing-done');
+                            }
+                        }
+                        type();
+                        typingObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 }); if (typeTarget) typingObserver.observe(typeTarget);
+        });
+    </script>
+
+
+
+</body>
+
+</html>

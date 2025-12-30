@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전장설계 | SEBO SYSTEM</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- 상단 네비 (메인과 동일) -->
+    <header class="topbar">
+      <div class="headerWrap">
+        <div class="container nav-wrap">
+          <a href="index.html" class="logo">
+            <img src="images/sebosystem.png" alt="SEBO SYSTEM">
+          </a>
+          <!-- 햄버거 버튼 -->
+          <button class="hamburger" aria-label="메뉴 열기" id="hamburgerBtn">☰</button>
+          <!-- 모바일 메뉴 -->
+          <nav class="mobile-nav" id="mobileNav">
+            <button class="close-btn" id="closeBtn" aria-label="메뉴 닫기">✕</button>
+            <ul class="main-menu">
+              <li class="has-submenu">
+                <a href="submenu-toggle">회사소개</a>
+                <ul class="submenu">
+                  <li><a href="about.html">회사소개</a></li>
+                  <li><a href="history.html">회사연혁</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="submenu-toggle">사업안내</a>
+                <ul class="submenu">
+                  <li><a href="consulting.html">자동화 컨설팅</a></li>
+                  <li><a href="design.html">전장 설계</a></li>
+                  <li><a href="panel.html">Control Panel 제작</a></li>
+                  <li><a href="plc.html">PLC 프로그래밍</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="submenu-toggle">견적문의</a>
+                <ul class="submenu">
+                  <li><a href="contact.html">견적문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="overlay" id="overlay"></div>
+          <nav class="nav">
+            <ul class="main-menu">
+              <li><a href="about.html">회사소개</a></li>
+              <li><a href="consulting.html" class="active">사업안내</a></li>
+              <li><a href="contact.html">견적문의</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mega-dropdown">
+          <div class="container">
+            <div class="dropdown-column">
+              <a href="about.html">회사소개</a>
+              <a href="history.html">회사연혁</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="consulting.html">자동화 컨설팅</a>
+              <a href="design.html">전장설계</a>
+              <a href="panel.html">Control & Electric Panel 제작</a>
+              <a href="plc.html">PLC 프로그래밍</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="contact.html">온라인 문의</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Hero (페이지 전용 배경) -->
+    <section class="sub-hero sub-hero-bg">
+      <div class="sub-hero-menu">
+        <ul>
+          <li><a href="consulting.html">자동화 컨설팅</a></li>
+          <li><a href="design.html">전장설계</a></li>
+          <li><a href="panel.html">Control & Electric Panel 제작</a></li>
+          <li><a href="plc.html" class="active">PLC 프로그래밍</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="service-intro container">
+      <p class="design-m">PLC 프로그래밍 프로세스</p>
+      <p class="design-s">요구 분석부터 유지보수까지, 단계별로 완성합니다.</p>
+    </section>
+    <div class="circle-container">
+      <!-- 연결선 (SVG) -->
+      <svg class="circle-lines" viewBox="0 0 400 400">
+        <!-- 외곽 애니메이션 원 -->
+        <circle cx="200" cy="200" r="170" stroke="#d0d0d0" stroke-width="2" fill="none" stroke-dasharray="1068"
+          stroke-dashoffset="1068" class="animated-circle" transform="rotate(-90 200 200)" />
+
+        <!-- 중앙 마스크 -->
+        <circle cx="200" cy="200" r="60" fill="white" />
+      </svg>
+
+
+      <!-- 5단계 -->
+      <div class="circle-step step1 animate-step" data-order="1">
+        <img src="images/plc-1.png" alt="요구 분석">
+        <p>요구 분석</p>
+      </div>
+      <div class="circle-step step2 animate-step" data-order="2">
+        <img src="images/plc-2.png" alt="로직 설계">
+        <p>로직 설계</p>
+      </div>
+      <div class="circle-step step3 animate-step" data-order="3">
+        <img src="images/plc-3.png" alt="코딩 & 디버깅">
+        <p>코딩 & 디버깅</p>
+      </div>
+      <div class="circle-step step4 animate-step" data-order="4">
+        <img src="images/plc-4.png" alt="현장 접속">
+        <p>현장 접속</p>
+      </div>
+      <div class="circle-step step5 animate-step" data-order="5">
+        <img src="images/plc-5.png" alt="유지보수">
+        <p>유지보수</p>
+      </div>
+
+      <!-- 중앙 -->
+      <div class="center-text">PLC</div>
+    </div>
+
+    </section>
+
+
+    <section class="plc-workflow container">
+      <h2 class="section-title">작업 방식</h2>
+      <div class="workflow-timeline">
+        <div class="step-item">
+          <div class="step-number">STEP 1</div>
+          <div class="step-text">장비 분석 및 I/O 리스트 확보</div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">STEP 2</div>
+          <div class="step-text">시퀀스 로직 구성 및 시뮬레이션</div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">STEP 3</div>
+          <div class="step-text">HMI 연동 및 인터페이스 설정</div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">STEP 4</div>
+          <div class="step-text">현장 적용 및 디버깅</div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">STEP 5</div>
+          <div class="step-text">테스트 후 납품 및 교육</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- 특징 / 강점 -->
+    <section class="service-features container section-alt">
+      <div class="section-title">
+        <p class="section-label">SEBO SYSTEM</p>
+        <h2>PLC 설계의 차별점</h2>
+      </div>
+      <div class="plc-feature-cards">
+        <div class="plc-feature-card animate-up">
+          <div class="icon">⚙️</div>
+          <div class="text">
+            <h3>모듈형 구조</h3>
+            <p>표준화된 블록 구성으로 유지보수 용이</p>
+          </div>
+        </div>
+        <div class="plc-feature-card animate-up">
+          <div class="icon">🛡️</div>
+          <div class="text">
+            <h3>안정성 강화</h3>
+            <p>에러 방지 인터록 / 안전 조건 탑재</p>
+          </div>
+        </div>
+        <div class="plc-feature-card animate-up">
+          <div class="icon">🔄</div>
+          <div class="text">
+            <h3>유연한 확장성</h3>
+            <p>다중 장비 연동, 향후 업데이트 대비</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plc-brands container">
+      <div class="brand-layout">
+        <!-- 왼쪽 텍스트 -->
+        <div class="brand-text">
+          <h2 class="section-title-b">지원 가능 브랜드</h2>
+          <p class="section-b-sub">다양한 글로벌 PLC 브랜드를 지원합니다.</p>
+        </div>
+
+        <!-- 오른쪽 로고 카드 -->
+        <ul class="brand-logos">
+          <li><img src="images/siemens.png" alt="Siemens"></li>
+          <li><img src="images/mitsubishi.png" alt="Mitsubishi"></li>
+          <li><img src="images/omron.png" alt="Omron"></li>
+          <li><img src="images/ls.png" alt="Rockwell"></li>
+          <!-- 필요시 더 추가 -->
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="plc-cta">
+      <div class="container">
+        <p class="cta-label">더 궁금한 점이 있으신가요?</p>
+        <a href="contact.html" class="btn plc-cta">상담 문의</a>
+      </div>
+    </section>
+
+
+
+    <section class="plc-faq container">
+      <h2 class="section-title-faq">자주 묻는 질문</h2>
+      <ul class="faq-list">
+        <li>
+          <div class="faq-t">Q. PLC만 개발해도 의뢰 가능한가요?</div>
+          <p>네, 하드웨어 없이도 로직 설계만 의뢰 가능합니다.</p>
+        </li>
+        <li>
+          <div class="faq-t">Q. 현장 출장도 해주시나요?</div>
+          <p>수도권 방문 가능합니다.</p>
+        </li>
+        <li>
+          <div class="faq-t">Q. 납기일 조정 가능한가요?</div>
+          <p>일정 협의 후 조정 가능합니다. 긴급 대응도 일부 가능합니다.</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- 맨 위로 버튼 -->
+    <button id="backToTop" aria-label="상단으로 이동">↑</button>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="container">
+        <p>경기도 안산시 상록구 해양3로 15, 1303호 (사동, 그랑시티 시그니처타워)</p>
+        <p>사업자번호: 554-02-00156 · 전화번호: 010-8807-8983 · 팩스: 031-415-8850 · 이메일: yc.ko@sebosystem.kr</p>
+        <p>&copy; 2025 SEBO SYSTEM. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/plc.js"></script>
+    <script src="js/plcprogramling.js"></script>
+    <script src="js/brand.js"></script>
+</body>
+
+</html>

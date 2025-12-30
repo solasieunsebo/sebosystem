@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전장설계 | SEBO SYSTEM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+        <!-- 상단 네비 (메인과 동일) -->
+        <header class="topbar">
+            <div class="headerWrap">
+                <div class="container nav-wrap">
+                    <a href="index.html" class="logo">
+                        <img src="images/sebosystem.png" alt="SEBO SYSTEM">
+                    </a>
+                    <!-- 햄버거 버튼 -->
+                    <button class="hamburger" aria-label="메뉴 열기" id="hamburgerBtn">☰</button>
+                    <!-- 모바일 메뉴 -->
+                    <nav class="mobile-nav" id="mobileNav">
+                        <button class="close-btn" id="closeBtn" aria-label="메뉴 닫기">✕</button>
+                        <ul class="main-menu">
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">회사소개</a>
+                                <ul class="submenu">
+                                    <li><a href="about.html">회사소개</a></li>
+                                    <li><a href="history.html">회사연혁</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">사업안내</a>
+                                <ul class="submenu">
+                                    <li><a href="consulting.html">자동화 컨설팅</a></li>
+                                    <li><a href="design.html">전장 설계</a></li>
+                                    <li><a href="panel.html">Control Panel 제작</a></li>
+                                    <li><a href="plc.html">PLC 프로그래밍</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="submenu-toggle">견적문의</a>
+                                <ul class="submenu">
+                                    <li><a href="contact.html">견적문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="overlay" id="overlay"></div>
+                    <nav class="nav">
+                        <ul class="main-menu">
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="consulting.html" class="active">사업안내</a></li>
+                            <li><a href="contact.html">견적문의</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mega-dropdown">
+                    <div class="container">
+                        <div class="dropdown-column">
+                            <a href="about.html">회사소개</a>
+                            <a href="history.html">회사연혁</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="consulting.html">자동화 컨설팅</a>
+                            <a href="design.html">전장설계</a>
+                            <a href="panel.html">Control & Electric Panel 제작</a>
+                            <a href="plc.html">PLC 프로그래밍</a>
+                        </div>
+                        <div class="dropdown-column">
+                            <a href="contact.html">온라인 문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero (페이지 전용 배경) -->
+        <section class="sub-hero sub-hero-bg">
+            <div class="sub-hero-menu">
+                <ul>
+                    <li><a href="consulting.html" class="active">자동화 컨설팅</a></li>
+                    <li><a href="design.html">전장설계</a></li>
+                    <li><a href="panel.html">Control & Electric Panel 제작</a></li>
+                    <li><a href="plc.html">PLC 프로그래밍</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 2. 인트로 요약 (Overview Section) -->
+        <section class="service-intro container">
+            <p class="design-m">자동화 컨설팅</p>
+            <p class="design-s">
+                스마트 팩토리 구축부터 라인 자동화, 공정 개선까지<br>
+                고객 맞춤형 자동화 전략을 제공합니다.
+            </p>
+            <a href="contact.html" class="btn ghost strong">상담 문의</a>
+        </section>
+
+        <!-- 3. 서비스 상세 설명 (What We Offer) -->
+        <section class="service-detail section-alt container">
+            <div class="service-row spaced">
+                <div class="service-img animate-left">
+                    <img src="images/consulting-1.png" alt="자동화 컨설팅">
+                </div>
+                <div class="service-text animate-tright align-left">
+                    <h2>현장 맞춤형 자동화</h2>
+                    <p class="p-desc highlight">
+                        현장 특성을 반영한 자동화 시스템 설계로 효율성과 안정성을 동시에 확보합니다.
+                    </p>
+                    <ul class="p-list design-list">
+                        <li>라인 최적화 설계</li>
+                        <li>자동화 수준 진단 및 개선</li>
+                        <li>장비 간 인터페이스 분석</li>
+                        <li>생산성 향상과 비용 절감 전략</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="timeline-glow with-blur" id="consult-timeline">
+            <canvas id="particleCanvas"></canvas> <!-- 💫 실제 입자 캔버스 -->
+
+            <div class="section-title animate-center">
+                <p class="section-label">SEBO SYSTEM</p>
+                <h2>자동화 컨설팅 진행 프로세스</h2>
+            </div>
+
+            <div class="timeline-horizontal">
+                <div class="step">
+                    <div class="circle">
+                        <svg class="icon">
+                            <use href="images/icons.svg#icon-diagnosis"></use>
+                        </svg>
+                    </div>
+                    <p>현장 진단</p>
+                </div>
+
+
+                <div class="step">
+                    <div class="circle">
+                        <svg class="icon">
+                            <use href="images/icons.svg#icon-workflow"></use>
+                        </svg>
+                    </div>
+                    <p>개선안 도출</p>
+                </div>
+
+
+
+
+                <div class="step">
+                    <div class="circle">
+                        <svg class="icon">
+                            <use href="images/icons.svg#icon-settings"></use>
+                        </svg>
+                    </div>
+                    <p>자동화 설계</p>
+                </div>
+
+
+
+
+                <div class="step">
+                    <div class="circle">
+                        <svg class="icon">
+                            <use href="images/icons.svg#icon-report"></use>
+                        </svg>
+                    </div>
+                    <p>결과 보고</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 4. SEBO만의 차별화 -->
+        <section class="service-detail container">
+            <div class="service-row spaced">
+                <div class="service-img animate-left">
+                    <img src="images/consulting-2.png" alt="자동화 전략">
+                </div>
+                <div class="service-text animate-tright align-left">
+                    <h2><span class="font-diff">SEBO SYSTEM</span> 의 차별화</h2>
+                    <p class="p-desc highlight">
+                        단순 진단이 아닌 실현 가능한 전략 제시로 고객의 생산 환경을 혁신합니다.
+                    </p>
+                    <ul class="p-list design-list">
+                        <li>다양한 산업군에서 축적된 프로젝트 경험</li>
+                        <li>표준화된 절차 기반의 자동화 전략 수립</li>
+                        <li>실행 가능성을 고려한 현장 중심 컨설팅</li>
+                        <li>결과를 만드는 데이터 기반 분석과 전략 수립</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="pre-cta">
+            <div class="container">
+                <p class="pre-cta-text">
+                    <span class="font-diffs">SEBO SYSTEM</span> 은 <strong>최신 설계 기술</strong>과 <strong>정밀한
+                        엔지니어링</strong>으로<br>
+                    고객의 성공적인 프로젝트를 완성합니다.
+                </p>
+            </div>
+        </section>
+        <!-- 5. 신뢰 포인트 강조 카드 -->
+        <section class="trust-section">
+            <div class="section-title">
+                <h2>고객이 <span class="font-diff">SEBO SYSTEM</span>을 선택하는 이유</h2>
+            </div>
+            <div class="trust-cards">
+                <div class="trust-card">
+                    <img src="images/icon-c-1.png" alt="전문성">
+                    <h3>산업별 전문성</h3>
+                    <p>반도체, 물류, 제조 등 <br> 각 산업군별 자동화 경험 보유</p>
+                </div>
+                <div class="trust-card">
+                    <img src="images/icon-c-2.png" alt="데이터 기반">
+                    <h3>데이터 기반 진단</h3>
+                    <p>설비 데이터 분석을 통한 <br> 과학적 개선 제안</p>
+                </div>
+                <div class="trust-card">
+                    <img src="images/icon-c-3.png" alt="지원">
+                    <h3>컨설팅 이후 사후관리</h3>
+                    <p>시스템 안정화부터 피드백까지 <br> 함께합니다.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cta clean-cta animate-up">
+            <div class="container">
+                <p class="cta-quote">“신뢰할 수 있는 자동화 파트너 <br><span class="font-diff">SEBO SYSTEM</span>은 실현 가능한 전략으로
+                    함께합니다.”</p>
+                <a href="contact.html" class="btn ghost strong">상담 문의</a>
+            </div>
+        </section>
+        <!-- 맨 위로 버튼 -->
+        <button id="backToTop" aria-label="상단으로 이동">↑</button>
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="container">
+                <p>경기도 안산시 상록구 해양3로 15, 1303호 (사동, 그랑시티 시그니처타워)</p>
+                <p>사업자번호: 554-02-00156 · 전화번호: 010-8807-8983 · 팩스: 031-415-8850 · 이메일: yc.ko@sebosystem.kr</p>
+                <p>&copy; 2025 SEBO SYSTEM. All rights reserved.</p>
+            </div>
+        </footer>
+        <!-- 공통 스크립트 -->
+        <script src="js/main.js"></script>
+        <script src="js/consulting.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // 1. 일반 애니메이션
+                const generalTargets = document.querySelectorAll(
+                    '.animate-left, .animate-right, .animate-tright, .animate-tleft, .animate-center, .animate-up'
+                );
+                const generalObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            generalObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                generalTargets.forEach(target => generalObserver.observe(target));
+
+                // 2. 카드류 순차 애니메이션
+                const sequentialTargets = document.querySelectorAll('.process-card, .feature-card, .trust-card');
+                const sequentialObserver = new IntersectionObserver(entries => {
+                    entries.forEach((entry, i) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, i * 150);
+                            sequentialObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                sequentialTargets.forEach(target => sequentialObserver.observe(target));
+
+                // 3. 기존 타임라인 순차 애니메이션
+                const timelineSteps = document.querySelectorAll('.timeline-step');
+                const timelineLines = document.querySelectorAll('.timeline-line');
+                const timelineObserver = new IntersectionObserver(entries => {
+                    let delay = 0;
+                    timelineSteps.forEach((step, i) => {
+                        if (step.getBoundingClientRect().top < window.innerHeight) {
+                            setTimeout(() => {
+                                step.classList.add('visible');
+                                if (timelineLines[i]) {
+                                    timelineLines[i].classList.add('visible');
+                                }
+                            }, delay);
+                            delay += 300;
+                            timelineObserver.unobserve(step);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                timelineSteps.forEach(step => timelineObserver.observe(step));
+
+                // 4. 타이핑 효과: 화면 진입 시 시작
+                const typeTarget = document.getElementById("type-text");
+                const typingObserver = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const text = "정확한 설계는 품질의 시작입니다.";
+                            let i = 0;
+                            function type() {
+                                if (i < text.length) {
+                                    typeTarget.innerHTML += text.charAt(i);
+                                    i++;
+                                    setTimeout(type, 80);
+                                } else {
+                                    typeTarget.classList.add('typing-done');
+                                }
+                            }
+                            type();
+                            typingObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                if (typeTarget) typingObserver.observe(typeTarget);
+
+                // 5. MZ 감성 타임라인 아이콘 & 블러효과 등장 애니메이션
+                const mgTimelineSteps = document.querySelectorAll('.timeline-glow .step');
+                const mgTimelineObserver = new IntersectionObserver(entries => {
+                    entries.forEach((entry, i) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, i * 200); // 단계별 순차 등장
+                            mgTimelineObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.3 });
+                mgTimelineSteps.forEach(step => mgTimelineObserver.observe(step));
+            });
+        </script>
+
+
+</body>
+
+</html>
