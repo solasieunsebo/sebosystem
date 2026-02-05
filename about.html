@@ -18,7 +18,7 @@
       <div class="headerWrap">
         <div class="container nav-wrap">
           <a href="index.html" class="logo">
-            <img src="images/sebosystem.png" alt="SEBO SYSTEM">
+            <img src="images/logo.svg" alt="SEBO SYSTEM">
           </a>
           <!-- 햄버거 버튼 -->
           <button class="hamburger" aria-label="메뉴 열기" id="hamburgerBtn">☰</button>
@@ -53,26 +53,29 @@
           <div class="overlay" id="overlay"></div>
           <nav class="nav">
             <ul class="main-menu">
-              <li><a href="about.html" class="active">회사소개</a></li>
-              <li><a href="consulting.html">사업안내</a></li>
-              <li><a href="contact.html">견적문의</a></li>
+              <li data-menu="company"><a href="about.html" class="active">회사소개</a></li>
+              <li data-menu="business"><a href="consulting.html">사업안내</a></li>
+              <li data-menu="contact"><a href="contact.html">견적문의</a></li>
             </ul>
           </nav>
         </div>
         <div class="mega-dropdown">
           <div class="container">
-            <div class="dropdown-column">
-              <a href="about.html">회사소개</a>
-              <a href="history.html">회사연혁</a>
-            </div>
-            <div class="dropdown-column">
-              <a href="consulting.html">자동화 컨설팅</a>
-              <a href="design.html">전장설계</a>
-              <a href="panel.html">Control & Electric Panel 제작</a>
-              <a href="plc.html">PLC 프로그래밍</a>
-            </div>
-            <div class="dropdown-column">
-              <a href="contact.html">온라인 문의</a>
+            <div class="dropdown-spacer"></div>
+            <div class="dropdown-columns">
+              <div class="dropdown-column" data-dropdown="company">
+                <a href="about.html">회사소개</a>
+                <a href="history.html">회사연혁</a>
+              </div>
+              <div class="dropdown-column" data-dropdown="business">
+                <a href="consulting.html">자동화 컨설팅</a>
+                <a href="design.html">전장설계</a>
+                <a href="panel.html">Control & Electric Panel 제작</a>
+                <a href="plc.html">PLC 프로그래밍</a>
+              </div>
+              <div class="dropdown-column" data-dropdown="contact">
+                <a href="contact.html">온라인 문의</a>
+              </div>
             </div>
           </div>
         </div>
