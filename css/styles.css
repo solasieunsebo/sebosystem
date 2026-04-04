@@ -2991,12 +2991,9 @@ html {
 
 .timeline-horizontal .step:hover {
   transform: scale(1.07);
-  box-shadow: 0 0 20px rgba(252, 78, 0, 0.45);
-  border-color: rgba(255, 121, 0, 0.6);
 }
 
-.timeline-horizontal .circle:hover {
-  transform: scale(1.07);
+.timeline-horizontal .step:hover .circle {
   box-shadow: 0 0 22px rgba(255, 121, 0, 0.35);
   border-color: rgba(255, 121, 0, 0.55);
   background: rgba(255, 121, 0, 0.08);
@@ -3042,7 +3039,7 @@ html {
 }
 
 /* 💫 hover 시 오렌지 빛 강조 */
-.circle:hover svg {
+.timeline-horizontal .step:hover .circle svg {
   transform: scale(1.1);
   color: #ff7900;
   filter: drop-shadow(0 0 6px rgba(255, 121, 0, 0.7)) drop-shadow(0 0 12px rgba(252, 78, 0, 0.4));
