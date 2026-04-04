@@ -3302,7 +3302,7 @@ html {
 
 
 .design-reason-wrap .strength-item {
-  border-radius: 16px;
+  border-radius: 20px !important;
 }
 
 .design-reason-wrap {
