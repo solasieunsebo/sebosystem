@@ -3247,87 +3247,191 @@ html {
   color: #bfbfbf;
 }
 
-/* 전장설계 통합 섹션 */
-.design-combined {
+/* =====================
+   전장설계 Why Section
+===================== */
+.design-why-section {
+  background: #111;
   padding: 100px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.design-combined .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.design-why-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 40%, rgba(252, 78, 0, 0.14) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 60%, rgba(255, 121, 0, 0.10) 0%, transparent 50%);
+  pointer-events: none;
 }
 
-.design-combined-header {
-  margin-bottom: 60px;
+.design-why-section .container {
+  position: relative;
+}
+
+.design-why-header {
   text-align: center;
+  margin-bottom: 64px;
 }
 
-.design-combined-label {
-  display: inline-block;
-  font-family: 'Pretendard';
+.design-why-label {
+  display: block;
+  font-family: 'Pretendard', sans-serif;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #fc4e00;
-  border: 1px solid rgba(252, 78, 0, 0.35);
-  padding: 4px 12px;
-  margin-bottom: 18px;
-  background: rgba(252, 78, 0, 0.04);
+  margin-bottom: 16px;
 }
 
-.design-combined-header h2 {
-  font-family: 'Pretendard';
-  font-size: clamp(24px, 2vw, 34px);
+.design-why-header h2 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: clamp(26px, 3vw, 38px);
   font-weight: 700;
-  color: #282828;
+  color: #fff;
   margin-bottom: 14px;
+  line-height: 1.3;
 }
 
-.design-combined-sub {
-  font-family: 'Pretendard';
+.design-why-sub {
+  font-family: 'Pretendard', sans-serif;
   font-size: 16px;
-  color: #888;
-  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.45);
 }
 
-.design-reason-grid {
+.design-why-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
-
-.design-reason-wrap .strength-item {
-  border-radius: 20px !important;
+.design-why-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 121, 0, 0.18);
+  border-radius: 20px;
+  padding: 40px 28px 36px;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.design-reason-wrap {
-  background-color: #1e1008;
-  background-image:
-    radial-gradient(ellipse at 15% 50%, rgba(252, 78, 0, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 50%, rgba(255, 121, 0, 0.12) 0%, transparent 55%),
-    radial-gradient(circle, rgba(255, 121, 0, 0.18) 1px, transparent 1px);
-  background-size: auto, auto, 30px 30px;
-  padding: 60px 40px;
-  margin: 0 -20px;
+.design-why-item::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #fc4e00, #ff7900);
+  border-radius: 20px 20px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.design-trust {
+.design-why-item:hover {
+  background: rgba(252, 78, 0, 0.07);
+  border-color: rgba(255, 121, 0, 0.45);
+  transform: translateY(-6px);
+}
+
+.design-why-item:hover::after {
+  opacity: 1;
+}
+
+.design-why-num {
+  display: block;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, #fc4e00, #ff7900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.design-why-item h3 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.design-why-item p {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.75;
+}
+
+.design-why-trust {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  padding-top: 60px;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 64px;
 }
 
-.design-trust .trust-card {
-  margin-top: 0;
+.design-why-trust-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px 32px;
+}
+
+.design-why-trust-item img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.design-why-trust-item h3 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.design-why-trust-item p {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.65;
+}
+
+.design-why-trust-divider {
+  width: 1px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .design-why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .design-why-grid {
+    grid-template-columns: 1fr;
+  }
+  .design-why-trust {
+    flex-direction: column;
+    gap: 0;
+  }
+  .design-why-trust-divider {
+    width: 60px;
+    height: 1px;
+    margin: 8px 0;
+  }
 }
 
 .strength-grid {
