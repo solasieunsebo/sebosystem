@@ -3304,7 +3304,7 @@ html {
   display: flex;
   align-items: flex-start;
   gap: 24px;
-  padding: 40px 36px;
+  padding: 24px 36px;
   background: #fff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #fc4e00;
@@ -3329,17 +3329,17 @@ html {
 
 .design-reason-text h3 {
   font-family: 'Pretendard';
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #282828;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .design-reason-text p {
   font-family: 'Pretendard';
-  font-size: 16px;
-  color: #666;
-  line-height: 1.7;
+  font-size: 15px;
+  color: #7a7a7a;
+  line-height: 1.6;
 }
 
 .design-trust {
