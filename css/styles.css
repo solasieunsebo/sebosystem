@@ -817,13 +817,13 @@ a {
 
 /* hover 효과 */
 .sub-hero-menu a:hover {
-  background: rgba(255, 255, 255, 1);
+  background: #f9f9f9;
   color: var(--primary-orange);
 }
 
 /* 활성화 버튼 */
 .sub-hero-menu a.active {
-  background: #ffffff;
+  background: #f9f9f9;
   color: var(--primary-orange);
   font-family: 'Pretendard';
   font-weight: 700;
@@ -3152,7 +3152,7 @@ html {
 
 .panel-visual-section {
   padding: 100px 20px;
-  background: #f6f8fb;
+  background: #f9f9f9;
 }
 
 .visual-content {
