@@ -3276,7 +3276,7 @@ html {
 
 .strength-num {
   font-family: 'Pretendard';
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fc4e00;
   letter-spacing: 1px;
@@ -3286,15 +3286,15 @@ html {
 
 .strength-text h3 {
   font-family: 'Pretendard';
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .strength-text p {
   font-family: 'Pretendard';
-  font-size: 14px;
+  font-size: 16px;
   color: #bfbfbf;
   line-height: 1.6;
 }
