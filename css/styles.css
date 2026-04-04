@@ -3301,6 +3301,10 @@ html {
 }
 
 
+.design-reason-wrap .strength-item {
+  border-radius: 16px;
+}
+
 .design-reason-wrap {
   background-color: #1e1008;
   background-image:
