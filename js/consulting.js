@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ctx.beginPath();
       const brightness = 0.3 + Math.sin(Date.now() / 600 + p.x) * 0.15;
       const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 3);
-      gradient.addColorStop(0, `rgba(77,229,211,${brightness})`);
+      gradient.addColorStop(0, `rgba(252,100,0,${brightness})`);
       gradient.addColorStop(1, "transparent");
       ctx.fillStyle = gradient;
       ctx.arc(p.x, p.y, p.r * 3, 0, Math.PI * 2);
