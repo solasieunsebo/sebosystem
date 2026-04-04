@@ -3247,6 +3247,31 @@ html {
   color: #bfbfbf;
 }
 
+/* 전장설계 통합 섹션 */
+.design-combined {
+  padding: 100px 0;
+}
+
+.design-combined .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.design-trust {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.design-trust .trust-card {
+  margin-top: 0;
+}
+
 .strength-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
