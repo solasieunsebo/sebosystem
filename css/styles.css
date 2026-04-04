@@ -1996,14 +1996,10 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../images/bg-circuit-w.png') center/cover no-repeat;
   opacity: 0.07;
   filter: sepia(0.6) hue-rotate(340deg) saturate(1.8);
   z-index: 0;
 }
-
-
-
 
 
 .panel-strength li {
@@ -3238,29 +3234,26 @@ html {
 }
 
 .panel-timeline {
-  padding: 80px 20px;
-  background-color: #1e1008;
-  background-image:
-    radial-gradient(ellipse at 15% 50%, rgba(252, 78, 0, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 85% 50%, rgba(255, 121, 0, 0.12) 0%, transparent 55%),
-    radial-gradient(circle, rgba(255, 121, 0, 0.18) 1px, transparent 1px);
-  background-size: auto, auto, 30px 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
-.panel-timeline .section-label {
-  color: #ff7900;
-}
-
-.panel-timeline .section-title h2 {
+.panel-strength .timeline-step h3 {
   color: #ffffff;
 }
 
-.panel-timeline .timeline-step h3 {
-  color: #ffffff;
-}
-
-.panel-timeline .timeline-step p {
+.panel-strength .timeline-step p {
   color: #bfbfbf;
+}
+
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #fc4e00, #ff7900);
+  margin: 80px auto;
+  border-radius: 2px;
+  opacity: 0.6;
 }
 
 
