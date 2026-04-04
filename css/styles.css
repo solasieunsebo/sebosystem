@@ -1281,18 +1281,18 @@ html {
 
 /* 버튼 */
 .btn.ghost {
-  font-family: 'Isamanru';
+  font-family: 'Pretendard';
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
   align-self: flex-start;
   border: 2px solid var(--blue);
-  padding: 8px 14px;
-  border-radius: 999px;
+  padding: 8px 20px;
+  border-radius: 2px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  /* 추가 */
+  letter-spacing: 0.5px;
 }
 
 .btn.ghost span {
@@ -1306,25 +1306,26 @@ html {
 
 .btn.ghost.strong {
   font-family: 'Pretendard';
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
-  background: linear-gradient(90deg, #FC4E00, #ff7900);
+  background: #fc4e00;
   border: none;
-  padding: 12px 24px;
-  border-radius: 999px;
-  box-shadow: 0 8px 24px rgba(252, 78, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 14px 32px;
+  border-radius: 2px;
+  box-shadow: none;
+  transition: background 0.3s ease, transform 0.2s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
   text-align: center;
   display: inline-block;
+  letter-spacing: 0.5px;
 }
 
 .btn.ghost.strong:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 24px rgba(252, 78, 0, 0.4);
+  background: #e04400;
+  transform: translateY(-2px);
 }
 
 .btn.ghost.strong::after {
@@ -2295,13 +2296,17 @@ html {
 
 
 .section-label {
-  font-family: 'Isamanru';
-  font-size: 16px;
-  font-weight: normal;
-  color: var(--text3);
-  letter-spacing: 1px;
+  font-family: 'Pretendard';
+  font-size: 12px;
+  font-weight: 600;
+  color: #fc4e00;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid rgba(252, 78, 0, 0.3);
+  background: rgba(252, 78, 0, 0.05);
 }
 
 
@@ -2330,6 +2335,20 @@ html {
   font-family: 'Pretendard';
   color: var(--text);
   text-align: center;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: #fc4e00;
+  border-radius: 2px;
 }
 
 .section-subtitle {
@@ -2437,20 +2456,21 @@ html {
 
 .btn.plc-cta {
   font-family: 'Pretendard';
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
-  padding: 18px 40px;
-  border-radius: 999px;
+  padding: 16px 40px;
+  border-radius: 2px;
   color: #fff;
-  background: linear-gradient(90deg, #FC4E00, #ff7900);
-  box-shadow: 0 8px 24px rgba(252, 78, 0, 0.4);
+  background: #fc4e00;
+  box-shadow: none;
   border: none;
   display: inline-block;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  letter-spacing: 0.5px;
 }
 
 
@@ -2817,13 +2837,15 @@ html {
   letter-spacing: 0.5px;
 }
 
+.timeline-glow .section-title h2::after,
+.panel-strength .section-title h2::after {
+  background: #ff7900;
+}
+
 .timeline-glow .section-label {
-  color: var(--mint-2);
-  font-family: 'Isamanru';
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  display: inline-block;
+  color: #ff7900;
+  background: rgba(255, 121, 0, 0.1);
+  border-color: rgba(255, 121, 0, 0.3);
 }
 
 /* 타임라인 라인 */
