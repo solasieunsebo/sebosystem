@@ -668,17 +668,37 @@ a {
 /* 서브페이지 Hero */
 .sub-hero {
   position: relative;
-  min-height: 400px;
+  min-height: 380px;
   width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #282828 url('../images/panel-r.jpg') center/cover no-repeat;
-  background-size: auto;
+  background-color: #111;
   color: #fff;
   padding: 40px 0 0;
-  background-position: top center;
+}
+
+.sub-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 8% 55%, rgba(252, 78, 0, 0.28) 0%, transparent 48%),
+    radial-gradient(ellipse at 92% 35%, rgba(255, 121, 0, 0.18) 0%, transparent 45%),
+    radial-gradient(circle, rgba(255, 121, 0, 0.10) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sub-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #fc4e00 30%, #ff7900 70%, transparent 100%);
+  z-index: 1;
 }
 
 /* 본문 */
@@ -757,12 +777,13 @@ a {
 .sub-hero-menu {
   display: flex;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(8px);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 2;
 }
 
 .sub-hero-menu ul {
