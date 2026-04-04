@@ -2753,6 +2753,32 @@ html {
 
 /* 제작사례 섹션 CSS-only 배경 */
 
+/* panel.html 제작 사례 + CTA 통합 섹션 */
+.panel-cases-section {
+  background: #f9f9f9;
+  padding: 100px 20px;
+}
+
+.panel-cases-section .section-title {
+  margin-bottom: 60px;
+}
+
+.panel-cases-cta {
+  text-align: center;
+  padding-top: 72px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.panel-cases-cta .cta-quote {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 400;
+  font-family: 'Pretendard';
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
