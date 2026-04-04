@@ -2030,28 +2030,60 @@ html {
 }
 
 .panel-strength {
-  background: #fdf8f5;
+  background-color: #1e1008;
+  background-image:
+    radial-gradient(ellipse at 15% 50%, rgba(252, 78, 0, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 50%, rgba(255, 121, 0, 0.12) 0%, transparent 55%),
+    radial-gradient(circle, rgba(255, 121, 0, 0.18) 1px, transparent 1px);
+  background-size: auto, auto, 30px 30px;
   padding: 100px 20px;
   margin-top: 0px;
   margin-bottom: 0px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .panel-strength::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../images/bg-circuit-w.png') center/cover no-repeat;
-  opacity: 0.07;
-  filter: sepia(0.6) hue-rotate(340deg) saturate(1.8);
-  z-index: 0;
+  display: none;
+}
+
+.panel-strength h2 {
+  color: #ffffff;
+}
+
+.panel-strength li {
+  color: #bfbfbf;
+}
+
+.panel-strength .section-label {
+  color: #ff7900;
+}
+
+.panel-strength .feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 121, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.panel-strength .feature-card:hover {
+  border-color: rgba(255, 121, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(252, 78, 0, 0.2);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.panel-strength .feature-card .icon {
+  color: #ff7900;
+}
+
+.panel-strength .feature-card h3 {
+  color: #ffffff;
+}
+
+.panel-strength .feature-card p {
+  color: #bfbfbf;
 }
 
 /* 오른쪽 정렬 */
