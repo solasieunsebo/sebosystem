@@ -2030,24 +2030,15 @@ html {
 }
 
 .panel-strength {
-  background: #fff;
-  /* 흰색 배경 */
+  background: #fdf8f5;
   padding: 100px 20px;
-  /* 위아래 여백 넉넉히 */
   margin-top: 0px;
-  /* 위쪽 간격 */
   margin-bottom: 0px;
-  /* 아래쪽 간격 */
   border-radius: 12px;
-  /* (선택) 모서리 둥글게 */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  /* (선택) 가벼운 그림자 */
   position: relative;
-  /* 기준 요소 지정! */
   overflow: hidden;
-  /* 이미지가 넘칠 경우 잘리게 */
   z-index: 1;
-  /* 내용물보다 낮은 배경은 z-index: 0이니까 이건 1 */
 }
 
 .panel-strength::before {
@@ -2058,7 +2049,8 @@ html {
   right: 0;
   bottom: 0;
   background: url('../images/bg-circuit-w.png') center/cover no-repeat;
-  opacity: 0.08;
+  opacity: 0.07;
+  filter: sepia(0.6) hue-rotate(340deg) saturate(1.8);
   z-index: 0;
 }
 
