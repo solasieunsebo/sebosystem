@@ -2049,7 +2049,7 @@ html {
   display: none;
 }
 
-.panel-strength h2 {
+.panel-strength .section-title h2 {
   color: #ffffff;
 }
 
@@ -3316,10 +3316,9 @@ html {
   transform: scaleY(1);
 }
 
-.panel-timeline {
+.panel-timeline .timeline {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 80px 20px;
 }
 
 .timeline-step h3 {
