@@ -3300,24 +3300,6 @@ html {
   margin: 0 auto;
 }
 
-.design-combined .strength-item {
-  background: #fff;
-  border-color: rgba(252, 78, 0, 0.15);
-}
-
-.design-combined .strength-item:hover {
-  background: rgba(252, 78, 0, 0.03);
-  border-color: rgba(252, 78, 0, 0.4);
-  border-left-color: #ff7900;
-}
-
-.design-combined .strength-text h3 {
-  color: #282828;
-}
-
-.design-combined .strength-text p {
-  color: #7a7a7a;
-}
 
 .design-trust {
   display: flex;
