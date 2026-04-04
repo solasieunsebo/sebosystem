@@ -2763,6 +2763,10 @@ html {
   margin-bottom: 60px;
 }
 
+.panel-cases-section .portfolio-item {
+  box-shadow: none;
+}
+
 .panel-cases-cta {
   text-align: center;
   padding-top: 72px;
