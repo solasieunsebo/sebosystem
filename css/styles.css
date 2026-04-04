@@ -2756,44 +2756,6 @@ html {
 }
 
 /* 제작사례 섹션 CSS-only 배경 */
-.panel-cases {
-  background-color: #1e1008;
-  background-image:
-    radial-gradient(ellipse at 20% 40%, rgba(252, 78, 0, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 60%, rgba(255, 121, 0, 0.12) 0%, transparent 55%),
-    radial-gradient(circle, rgba(255, 121, 0, 0.18) 1px, transparent 1px);
-  background-size: auto, auto, 30px 30px;
-  color: #fff;
-}
-
-.panel-cases::before {
-  display: none;
-}
-
-.panel-cases .section-label {
-  color: #ff7900;
-}
-
-.panel-cases h2 {
-  color: #ffffff;
-}
-
-.panel-cases .portfolio-item {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 121, 0, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-.panel-cases .portfolio-item:hover {
-  border-color: rgba(255, 121, 0, 0.5);
-  box-shadow: 0 8px 30px rgba(252, 78, 0, 0.2);
-  transform: translateY(-4px);
-}
-
-.panel-cases .portfolio-item p {
-  color: #bfbfbf;
-}
 
 .portfolio-gallery {
   display: grid;
@@ -3277,7 +3239,28 @@ html {
 
 .panel-timeline {
   padding: 80px 20px;
+  background-color: #1e1008;
+  background-image:
+    radial-gradient(ellipse at 15% 50%, rgba(252, 78, 0, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 50%, rgba(255, 121, 0, 0.12) 0%, transparent 55%),
+    radial-gradient(circle, rgba(255, 121, 0, 0.18) 1px, transparent 1px);
+  background-size: auto, auto, 30px 30px;
+}
 
+.panel-timeline .section-label {
+  color: #ff7900;
+}
+
+.panel-timeline .section-title h2 {
+  color: #ffffff;
+}
+
+.panel-timeline .timeline-step h3 {
+  color: #ffffff;
+}
+
+.panel-timeline .timeline-step p {
+  color: #bfbfbf;
 }
 
 
