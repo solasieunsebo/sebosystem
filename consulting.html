@@ -256,37 +256,6 @@
                 }, { threshold: 0.1 });
                 generalTargets.forEach(target => generalObserver.observe(target));
 
-                // 파티클 생성
-                (function () {
-                    const hero = document.querySelector('.consulting-hero');
-                    if (!hero) return;
-                    const COLORS = [
-                        'rgba(255,255,255,0.85)',
-                        'rgba(255,255,220,0.75)',
-                        'rgba(255,240,180,0.70)'
-                    ];
-                    for (let i = 0; i < 18; i++) {
-                        const dot = document.createElement('span');
-                        dot.classList.add('sparkle-dot');
-                        const size  = Math.random() * 2.5 + 1;
-                        const left  = Math.random() * 96 + 2;
-                        const dur   = (Math.random() * 4 + 5).toFixed(2);
-                        const delay = (Math.random() * 6).toFixed(2);
-                        const color = COLORS[Math.floor(Math.random() * COLORS.length)];
-                        dot.style.cssText = [
-                            `width:${size}px`,
-                            `height:${size}px`,
-                            `left:${left}%`,
-                            `bottom:${Math.random() * 20 + 5}%`,
-                            `background:${color}`,
-                            `box-shadow:0 0 ${size * 3}px ${size * 1.5}px ${color}`,
-                            `animation-duration:${dur}s`,
-                            `animation-delay:-${delay}s`
-                        ].join(';');
-                        hero.appendChild(dot);
-                    }
-                })();
-
                 // 2. 카드류 순차 애니메이션
                 const sequentialTargets = document.querySelectorAll('.process-card, .feature-card, .trust-card');
                 const sequentialObserver = new IntersectionObserver(entries => {

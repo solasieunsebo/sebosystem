@@ -1050,40 +1050,27 @@ a {
 /* ── Consulting Hero ─────────────────────────── */
 .sub-hero.consulting-hero {
   min-height: 260px;
-  background: linear-gradient(135deg, #b84200 0%, #e06000 35%, #f08800 65%, #f5ad38 100%);
+  background: #0d1117;
 }
 
+/* 사선 텍스처 + 오렌지 스포트라이트 */
 .sub-hero.consulting-hero::before {
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(255, 255, 255, 0.12) 0%, transparent 45%),
-    radial-gradient(ellipse at 78% 30%, rgba(255, 200, 80, 0.14) 0%, transparent 42%),
-    radial-gradient(ellipse at 50% 95%, rgba(150, 30, 0, 0.14) 0%, transparent 40%);
-  animation: consulting-breathe 6s ease-in-out infinite alternate;
+    radial-gradient(ellipse at 22% 55%, rgba(252, 90, 0, 0.30) 0%, transparent 52%),
+    radial-gradient(ellipse at 75% 35%, rgba(255, 130, 0, 0.10) 0%, transparent 40%),
+    repeating-linear-gradient(
+      -52deg,
+      transparent 0px,
+      transparent 38px,
+      rgba(255, 255, 255, 0.025) 38px,
+      rgba(255, 255, 255, 0.025) 39px
+    );
+  animation: none;
 }
 
+/* 하단 오렌지 라인 유지 */
 .sub-hero.consulting-hero::after {
-  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.18) 40%, rgba(255,220,100,0.22) 60%, transparent 100%);
-}
-
-@keyframes consulting-breathe {
-  from { opacity: 0.8; }
-  to   { opacity: 1;   }
-}
-
-/* 파티클 */
-.sparkle-dot {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2;
-  animation: particle-drift ease-in-out infinite;
-}
-
-@keyframes particle-drift {
-  0%   { opacity: 0;    transform: translate(0, 0)          scale(0.4); }
-  20%  { opacity: 0.9;  transform: translate(8px, -40px)    scale(1);   }
-  60%  { opacity: 0.55; transform: translate(-6px, -110px)  scale(0.8); }
-  100% { opacity: 0;    transform: translate(4px, -180px)   scale(0.3); }
+  background: linear-gradient(90deg, transparent 0%, #fc4e00 25%, #ff7900 75%, transparent 100%);
 }
 
 /* ── Design Hero ─────────────────────────────── */
