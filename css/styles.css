@@ -1049,14 +1049,14 @@ a {
 /* Hero - 전장설계 */
 /* ── Consulting Hero ─────────────────────────── */
 .sub-hero.consulting-hero {
-  background: #080808;
+  background: radial-gradient(ellipse at 30% 60%, #2a0e00 0%, #161616 55%, #0e0e0e 100%);
 }
 
 .sub-hero.consulting-hero::before {
   background:
-    radial-gradient(ellipse at 15% 65%, rgba(252, 78, 0, 0.22) 0%, transparent 50%),
-    radial-gradient(ellipse at 85% 25%, rgba(255, 130, 0, 0.13) 0%, transparent 48%),
-    radial-gradient(ellipse at 48% 90%, rgba(180, 40, 0, 0.10) 0%, transparent 45%);
+    radial-gradient(ellipse at 15% 65%, rgba(252, 78, 0, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 25%, rgba(255, 130, 0, 0.28) 0%, transparent 48%),
+    radial-gradient(ellipse at 50% 90%, rgba(200, 60, 0, 0.20) 0%, transparent 45%);
   animation: consulting-breathe 7s ease-in-out infinite alternate;
 }
 
