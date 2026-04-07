@@ -1049,19 +1049,23 @@ a {
 /* Hero - 전장설계 */
 /* ── Consulting Hero ─────────────────────────── */
 .sub-hero.consulting-hero {
-  background: radial-gradient(ellipse at 30% 60%, #2a0e00 0%, #161616 55%, #0e0e0e 100%);
+  background: linear-gradient(135deg, #c84a00 0%, #f06800 30%, #ff9500 60%, #ffbf40 100%);
 }
 
 .sub-hero.consulting-hero::before {
   background:
-    radial-gradient(ellipse at 15% 65%, rgba(252, 78, 0, 0.45) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 25%, rgba(255, 130, 0, 0.28) 0%, transparent 48%),
-    radial-gradient(ellipse at 50% 90%, rgba(200, 60, 0, 0.20) 0%, transparent 45%);
-  animation: consulting-breathe 7s ease-in-out infinite alternate;
+    radial-gradient(ellipse at 20% 50%, rgba(255, 255, 255, 0.18) 0%, transparent 45%),
+    radial-gradient(ellipse at 78% 30%, rgba(255, 200, 80, 0.22) 0%, transparent 42%),
+    radial-gradient(ellipse at 50% 95%, rgba(180, 40, 0, 0.20) 0%, transparent 40%);
+  animation: consulting-breathe 6s ease-in-out infinite alternate;
+}
+
+.sub-hero.consulting-hero::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 40%, rgba(255,220,100,0.4) 60%, transparent 100%);
 }
 
 @keyframes consulting-breathe {
-  from { opacity: 0.7; }
+  from { opacity: 0.8; }
   to   { opacity: 1;   }
 }
 
@@ -1076,8 +1080,8 @@ a {
 
 @keyframes particle-drift {
   0%   { opacity: 0;    transform: translate(0, 0)          scale(0.4); }
-  20%  { opacity: 0.85; transform: translate(8px, -40px)    scale(1);   }
-  60%  { opacity: 0.5;  transform: translate(-6px, -110px)  scale(0.8); }
+  20%  { opacity: 0.9;  transform: translate(8px, -40px)    scale(1);   }
+  60%  { opacity: 0.55; transform: translate(-6px, -110px)  scale(0.8); }
   100% { opacity: 0;    transform: translate(4px, -180px)   scale(0.3); }
 }
 
