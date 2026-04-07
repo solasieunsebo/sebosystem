@@ -84,7 +84,7 @@
         </header>
 
         <!-- Hero (페이지 전용 배경) -->
-        <section class="sub-hero sub-hero-bg">
+        <section class="sub-hero consulting-hero">
             <div class="sub-hero-menu">
                 <ul>
                     <li><a href="consulting.html" class="active">자동화 컨설팅</a></li>
@@ -255,6 +255,39 @@
                     });
                 }, { threshold: 0.1 });
                 generalTargets.forEach(target => generalObserver.observe(target));
+
+                // 반짝이 파티클 생성
+                (function () {
+                    const hero = document.querySelector('.consulting-hero');
+                    if (!hero) return;
+                    const COLORS = [
+                        'rgba(255,200,80,0.95)',
+                        'rgba(255,140,0,0.90)',
+                        'rgba(255,255,200,0.85)',
+                        'rgba(252,78,0,0.90)',
+                        'rgba(255,220,120,0.80)'
+                    ];
+                    for (let i = 0; i < 38; i++) {
+                        const dot = document.createElement('span');
+                        dot.classList.add('sparkle-dot');
+                        const size    = Math.random() * 4 + 2;
+                        const left    = Math.random() * 98;
+                        const dur     = (Math.random() * 3 + 2.5).toFixed(2);
+                        const delay   = (Math.random() * 4).toFixed(2);
+                        const color   = COLORS[Math.floor(Math.random() * COLORS.length)];
+                        dot.style.cssText = [
+                            `width:${size}px`,
+                            `height:${size}px`,
+                            `left:${left}%`,
+                            `bottom:${Math.random() * 30}%`,
+                            `background:${color}`,
+                            `box-shadow:0 0 ${size * 2}px ${size}px ${color}`,
+                            `animation-duration:${dur}s`,
+                            `animation-delay:${delay}s`
+                        ].join(';');
+                        hero.appendChild(dot);
+                    }
+                })();
 
                 // 2. 카드류 순차 애니메이션
                 const sequentialTargets = document.querySelectorAll('.process-card, .feature-card, .trust-card');

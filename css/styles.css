@@ -1047,6 +1047,41 @@ a {
 
 
 /* Hero - 전장설계 */
+/* ── Consulting Hero ─────────────────────────── */
+.sub-hero.consulting-hero {
+  background: radial-gradient(ellipse at 20% 60%, #1a0500 0%, #0a0a0a 60%, #000 100%);
+}
+
+.sub-hero.consulting-hero::before {
+  background:
+    radial-gradient(ellipse at 18% 60%, rgba(252, 78, 0, 0.50) 0%, transparent 45%),
+    radial-gradient(ellipse at 82% 30%, rgba(255, 140, 0, 0.30) 0%, transparent 42%),
+    radial-gradient(ellipse at 50% 95%, rgba(200, 50, 0, 0.22) 0%, transparent 50%);
+  animation: consulting-glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes consulting-glow {
+  from { opacity: 0.75; }
+  to   { opacity: 1; }
+}
+
+/* 반짝이 파티클 */
+.sparkle-dot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+  animation: sparkle-rise linear infinite;
+}
+
+@keyframes sparkle-rise {
+  0%   { opacity: 0;   transform: translateY(0)     scale(0);   }
+  15%  { opacity: 1;   transform: translateY(-30px)  scale(1);   }
+  80%  { opacity: 0.5; transform: translateY(-160px) scale(0.6); }
+  100% { opacity: 0;   transform: translateY(-220px) scale(0);   }
+}
+
+/* ── Design Hero ─────────────────────────────── */
 .sub-hero.design-hero {
   position: relative;
   min-height: 400px;
