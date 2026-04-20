@@ -500,6 +500,18 @@ a {
   inset: 0;
   background: linear-gradient(to right,
       #282828 0%, transparent 20%, transparent 80%, #282828 100%);
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(255, 100, 0, 0.55) 0%, transparent 60%);
+  mix-blend-mode: screen;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .hero-inner {
@@ -511,6 +523,7 @@ a {
   text-align: center;
   color: #fff;
   width: 100%;
+  z-index: 10;
 }
 
 .hero h1 {
@@ -1050,22 +1063,15 @@ a {
 /* ── Consulting Hero ─────────────────────────── */
 .sub-hero.consulting-hero {
   min-height: 260px;
-  background: #0d1117;
+  background: #0d1117 url('../images/consulting-hero.png') center/cover no-repeat;
 }
 
-/* 사선 텍스처 + 오렌지 스포트라이트 */
+/* 이미지 위 어두운 오버레이 + 오렌지 스포트라이트 */
 .sub-hero.consulting-hero::before {
   background:
-    radial-gradient(ellipse at 22% 55%, rgba(252, 78, 0, 0.60) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 35%, rgba(255, 120, 0, 0.30) 0%, transparent 42%),
-    radial-gradient(ellipse at 50% 100%, rgba(220, 60, 0, 0.20) 0%, transparent 40%),
-    repeating-linear-gradient(
-      -52deg,
-      transparent 0px,
-      transparent 38px,
-      rgba(255, 255, 255, 0.025) 38px,
-      rgba(255, 255, 255, 0.025) 39px
-    );
+    radial-gradient(ellipse at 22% 55%, rgba(252, 78, 0, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 35%, rgba(255, 120, 0, 0.20) 0%, transparent 42%),
+    linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.55) 100%);
   animation: none;
 }
 
