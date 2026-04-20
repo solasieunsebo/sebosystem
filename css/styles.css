@@ -1676,16 +1676,16 @@ html {
   transform: translateY(-50%);
   width: 22px;
   height: 22px;
-  background: #1976d2;
+  background: #fc4e00;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px #1976d2;
+  box-shadow: 0 0 0 2px #fc4e00;
 }
 
 /* STEP 번호 */
 .step-number {
   font-weight: bold;
-  color: #1976d2;
+  color: #fc4e00;
   width: 120px;
   display: flex;
   align-items: center;
