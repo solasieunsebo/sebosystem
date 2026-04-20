@@ -1622,6 +1622,14 @@ html {
   color: #ffffff;
 }
 
+/* ── 유리 빛 스윕 애니메이션 ── */
+@keyframes glass-sweep {
+  0%   { left: -120%; opacity: 0; }
+  5%   { opacity: 1; }
+  20%  { left: 130%;  opacity: 0; }
+  100% { left: 130%;  opacity: 0; }
+}
+
 /* ── 작업방식 타임라인 ── */
 .plc-combined .workflow-timeline {
   position: relative;
@@ -1666,6 +1674,34 @@ html {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* 유리 빛 스윕 레이어 */
+.step-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.22) 55%,
+    rgba(255, 255, 255, 0.12) 60%,
+    transparent 75%
+  );
+  border-radius: 12px;
+  pointer-events: none;
+  opacity: 0;
+  animation: glass-sweep 7.5s infinite;
+}
+
+.step-item:nth-child(1)::after { animation-delay: 0s; }
+.step-item:nth-child(2)::after { animation-delay: 1.5s; }
+.step-item:nth-child(3)::after { animation-delay: 3s; }
+.step-item:nth-child(4)::after { animation-delay: 4.5s; }
+.step-item:nth-child(5)::after { animation-delay: 6s; }
 
 /* 원형 포인트 */
 .step-item::before {
