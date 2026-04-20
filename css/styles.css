@@ -1590,73 +1590,11 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  background: #fff;
+  background: linear-gradient(145deg, #fff3ee, #ffffff);
   padding: 18px 26px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-  background: linear-gradient(145deg, #f0f7ff, #ffffff);
-  border: 1px solid #d0e3f7;
-  box-shadow: 0 4px 10px rgba(0, 87, 168, 0.08);
-}
-
-.step-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 원형 포인트 */
-.step-item::before {
-  content: "";
-  position: absolute;
-  left: -13px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
-  background: #fc4e00;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px #fc4e00;
-}
-
-/* STEP 번호 */
-.step-number {
-  font-family: 'Isamanru';
-  font-weight: normal;
-  color: #fc4e00;
-  width: 120px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 1rem;
-}
-
-/* 텍스트 */
-.step-text {
-  font-family: 'Isamanru';
-  font-weight: normal;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.4;
-}
-
-/* 아이콘 */
-.step-icon {
-  font-size: 1.3rem;
-}
-
-/* 카드 */
-.step-item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background: #ffffff;
-  padding: 18px 26px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ffd5c0;
+  box-shadow: 0 4px 10px rgba(252, 78, 0, 0.08);
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
@@ -1684,6 +1622,7 @@ html {
 
 /* STEP 번호 */
 .step-number {
+  font-family: 'Isamanru';
   font-weight: bold;
   color: #fc4e00;
   width: 120px;
@@ -1693,16 +1632,17 @@ html {
   font-size: 1rem;
 }
 
-/* 아이콘 */
-.step-icon {
-  font-size: 1.3rem;
-}
-
 /* 텍스트 */
 .step-text {
+  font-family: 'Isamanru';
   font-size: 1rem;
   color: #333;
   line-height: 1.4;
+}
+
+/* 아이콘 */
+.step-icon {
+  font-size: 1.3rem;
 }
 
 .plc-brands {
@@ -1860,42 +1800,6 @@ html {
   font-size: 1rem;
 }
 
-.step-item {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background: #ffffff;
-  padding: 14px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  padding: 16px 24px;
-}
-
-.step-item::before {
-  content: "";
-  position: absolute;
-  left: -12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background: #fc4e00;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px #fc4e00;
-}
-
-.step-number {
-  font-weight: bold;
-  color: #1976d2;
-  width: 100px;
-  flex-shrink: 0;
-}
-
-.step-text {
-  font-size: 16px;
-  color: #333;
-}
 
 .mt-xl {
   margin-top: 80px;
