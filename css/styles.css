@@ -1616,17 +1616,17 @@ html {
   transform: translateY(-50%);
   width: 22px;
   height: 22px;
-  background: #0057a8;
+  background: #fc4e00;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px #0057a8;
+  box-shadow: 0 0 0 2px #fc4e00;
 }
 
 /* STEP 번호 */
 .step-number {
   font-family: 'Isamanru';
   font-weight: normal;
-  color: #0057a8;
+  color: #fc4e00;
   width: 120px;
   display: flex;
   align-items: center;
