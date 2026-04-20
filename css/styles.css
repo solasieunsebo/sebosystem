@@ -1837,12 +1837,13 @@ html {
 }
 
 .plc-feature-card {
-  background: linear-gradient(145deg, #ffffff, #f8faff);
+  background: #262626;
+  border: 1px solid rgba(252, 78, 0, 0.2);
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   padding: 40px 24px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: default;
 }
 
@@ -1878,26 +1879,26 @@ html {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 10px;
-  color: var(--navy);
+  color: #ffffff;
 }
 
 .plc-feature-card .text p {
   font-family: 'Pretendard';
   font-weight: 400;
   font-size: 17px;
-  color: var(--text2);
+  color: #aaaaaa;
   line-height: 1.6;
   margin: 0;
 }
 
-
 .plc-feature-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #FC4E00;
+  box-shadow: 0 12px 32px rgba(252, 78, 0, 0.2);
 }
 
 .plc-feature-card:hover .icon {
-  background: #30ed8c;
+  background: linear-gradient(135deg, #FC4E00, #ff7900);
   transform: rotate(10deg) scale(1.1);
 }
 
@@ -1926,16 +1927,17 @@ html {
   text-align: left;
 }
 
+.service-features .section-label {
+  color: #FC4E00;
+}
+
 .service-features h2 {
   font-family: 'Pretendard';
   font-weight: 700;
   text-align: center;
-  /* 중앙 정렬 */
   max-width: 800px;
-  /* 너비 제한 */
   margin: 0 auto 80px;
-  /* 가운데 정렬 + 하단 여백 */
-  color: var(--text);
+  color: #ffffff;
   font-size: 32px;
   margin-bottom: 0;
   position: relative;
@@ -1944,12 +1946,10 @@ html {
 }
 
 .service-features {
-  background: #fdf8f5;
+  background: #1a1a1a;
   padding: 100px 20px;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -1958,12 +1958,9 @@ html {
 .service-features::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.07;
-  filter: sepia(0.6) hue-rotate(340deg) saturate(1.8);
+  inset: 0;
+  background: url('../images/bg-circuit.png') center/cover no-repeat;
+  opacity: 0.04;
   z-index: 0;
 }
 
