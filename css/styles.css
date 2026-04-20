@@ -1590,7 +1590,7 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(145deg, #ffffff, #ffffff);
+  background: linear-gradient(145deg, #fff3ee, #ffffff);
   padding: 18px 26px;
   border-radius: 10px;
   border: 1px solid #fc4e00;
