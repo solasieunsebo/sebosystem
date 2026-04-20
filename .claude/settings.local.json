@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"c:\\\\Users\\\\eulse\\\\Downloads\\\\로고.svg\" \"C:\\\\Users\\\\eulse\\\\OneDrive\\\\Desktop\\\\sebosystem\\\\images\\\\logo.svg\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(sed:*)",
+      "WebFetch(domain:www.sebosystem.kr)",
+      "Bash(gh api:*)",
+      "Bash(grep -n \"^a,\\\\|^a {\" /c/Users/eulse/OneDrive/Desktop/sebosystem/css/styles.css)",
+      "Bash(grep *)"
+    ]
+  }
+}
