@@ -1647,27 +1647,28 @@ html {
   margin: 40px auto 0;
 }
 
-/* 카드 */
+/* ── 작업방식 카드 ── */
 .step-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 24px;
   position: relative;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(4px);
-  padding: 20px 28px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-left: 2px solid rgba(252, 78, 0, 0.5);
+  padding: 24px 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
   opacity: 0;
-  transform: translateX(-20px);
+  transform: translateX(-16px);
   transition: all 0.5s ease;
 }
 
 .step-item:hover {
-  background: rgba(252, 78, 0, 0.07);
-  border-left-color: #FC4E00;
-  box-shadow: 0 0 20px rgba(252, 78, 0, 0.12);
-  transform: translateX(4px);
+  background: rgba(252, 78, 0, 0.06);
+  border-color: rgba(252, 78, 0, 0.35);
+  transform: translateX(6px);
+  box-shadow: 0 4px 24px rgba(252, 78, 0, 0.1);
 }
 
 .step-item.visible {
@@ -1686,12 +1687,12 @@ html {
   background: linear-gradient(
     105deg,
     transparent 30%,
-    rgba(255, 255, 255, 0.12) 50%,
-    rgba(255, 255, 255, 0.22) 55%,
-    rgba(255, 255, 255, 0.12) 60%,
+    rgba(255, 255, 255, 0.10) 50%,
+    rgba(255, 255, 255, 0.20) 55%,
+    rgba(255, 255, 255, 0.10) 60%,
     transparent 75%
   );
-  border-radius: 12px;
+  border-radius: 14px;
   pointer-events: none;
   opacity: 0;
   animation: glass-sweep 7.5s infinite;
@@ -1703,50 +1704,97 @@ html {
 .step-item:nth-child(4)::after { animation-delay: 4.5s; }
 .step-item:nth-child(5)::after { animation-delay: 6s; }
 
-/* 원형 포인트 */
-.step-item::before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  width: 14px;
-  height: 14px;
-  background: #FC4E00;
-  border-radius: 50%;
-  border: 2px solid #0e0e0e;
-  box-shadow: 0 0 8px rgba(252, 78, 0, 0.7);
-}
-
-/* STEP 번호 */
-.step-number {
+/* 번호 배지 */
+.step-badge {
   font-family: 'Pretendard';
+  font-size: 22px;
   font-weight: 800;
   color: #FC4E00;
-  width: 80px;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  opacity: 0.9;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(252, 78, 0, 0.4);
+  border-radius: 10px;
+  background: rgba(252, 78, 0, 0.08);
   flex-shrink: 0;
+  letter-spacing: -1px;
 }
 
-/* 텍스트 */
-.step-text {
+/* 카드 텍스트 영역 */
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.step-title {
   font-family: 'Pretendard';
-  font-size: 15px;
-  font-weight: 500;
-  color: #e0e0e0;
-  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.step-desc {
+  font-family: 'Pretendard';
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 1.7;
+  margin: 0;
 }
 
 /* ── 차별점 카드 ── */
 .plc-feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-top: 40px;
 }
 
-.step-icon {
-  font-size: 1.3rem;
+.plc-feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 28px 24px;
 }
+
+.pfc-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #FC4E00, #ff7900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(252, 78, 0, 0.35);
+}
+
+.pfc-body h3 {
+  font-family: 'Pretendard';
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.pfc-body p {
+  font-family: 'Pretendard';
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.step-icon { font-size: 1.3rem; }
 
 .plc-brands {
   background: linear-gradient(135deg, #f6f8fb 0%, #eaf2f9 100%);
@@ -2295,7 +2343,7 @@ html {
   font-family: 'Pretendard';
   font-weight: 500;
   line-height: 1.6;
-  color: var(--text3);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .pre-cta-text strong {
