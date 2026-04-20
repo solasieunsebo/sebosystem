@@ -1546,30 +1546,66 @@ html {
   line-height: 1.6;
 }
 
-/* ── PLC 작업방식 ─────────────────────────────── */
-.plc-workflow {
-  background: #f7f7f7;
+/* ── PLC 작업방식 + 차별점 통합 섹션 ─────────────── */
+.plc-combined {
   position: relative;
-  padding: 60px 20px;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 0px;
+  padding: 80px 20px 100px;
   overflow: hidden;
+  background: #141414;
 }
 
-.plc-workflow::before {
+/* CSS 배경: 주황 광원 + 격자 패턴 */
+.plc-combined::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../images/bg-circuit-w.png') center/cover no-repeat;
-  opacity: 0.06;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 30%, rgba(252, 78, 0, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 70%, rgba(255, 121, 0, 0.12) 0%, transparent 45%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.02) 40px,
+      rgba(255,255,255,0.02) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.02) 40px,
+      rgba(255,255,255,0.02) 41px
+    );
+  pointer-events: none;
   z-index: 0;
 }
 
-.plc-workflow .workflow-timeline {
+.plc-combined .container {
+  position: relative;
+  z-index: 1;
+}
+
+.plc-combined-block {
+  padding: 20px 0 40px;
+}
+
+.plc-combined-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(252,78,0,0.4), transparent);
+  margin: 20px 0 60px;
+}
+
+/* 통합 섹션 내 타이틀 색상 */
+.plc-combined .section-label {
+  color: #FC4E00;
+}
+
+.plc-combined h2 {
+  color: #ffffff;
+}
+
+.plc-combined .workflow-timeline {
   position: relative;
   z-index: 1;
 }
@@ -1947,8 +1983,8 @@ html {
 }
 
 .service-features {
-  background: #1a1a1a;
-  padding: 100px 20px;
+  background: transparent;
+  padding: 0;
   margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
@@ -1957,12 +1993,7 @@ html {
 }
 
 .service-features::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('../images/bg-circuit.png') center/cover no-repeat;
-  opacity: 0.04;
-  z-index: 0;
+  display: none;
 }
 
 
