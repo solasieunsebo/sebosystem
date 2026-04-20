@@ -720,7 +720,7 @@ a {
 }
 
 .sub-hero.sub-hero-bg::before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.62);
   animation: none;
 }
 
@@ -1078,7 +1078,7 @@ a {
 
 /* 이미지 위 어두운 오버레이 */
 .sub-hero.consulting-hero::before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.62);
   animation: none;
 }
 
