@@ -9,7 +9,8 @@
       "WebFetch(domain:www.sebosystem.kr)",
       "Bash(gh api:*)",
       "Bash(grep -n \"^a,\\\\|^a {\" /c/Users/eulse/OneDrive/Desktop/sebosystem/css/styles.css)",
-      "Bash(grep *)"
+      "Bash(grep *)",
+      "Bash(python3 *)"
     ]
   }
 }
