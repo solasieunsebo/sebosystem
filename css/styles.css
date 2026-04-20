@@ -1546,38 +1546,41 @@ html {
   line-height: 1.6;
 }
 
-/* ── PLC 작업방식 + 차별점 통합 섹션 ─────────────── */
+/* ══════════════════════════════════════════════
+   PLC 작업방식 + 차별점 통합 섹션
+══════════════════════════════════════════════ */
 .plc-combined {
   position: relative;
-  padding: 80px 20px 100px;
+  padding: 100px 20px 120px;
   overflow: hidden;
-  background: #141414;
+  background: #0e0e0e;
 }
 
-/* CSS 배경: 주황 광원 + 격자 패턴 */
+/* 배경: 메시 그라디언트 + 주황 광원 3개 */
 .plc-combined::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 15% 30%, rgba(252, 78, 0, 0.18) 0%, transparent 50%),
-    radial-gradient(ellipse at 85% 70%, rgba(255, 121, 0, 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse 60% 50% at 10% 20%,  rgba(252, 78,  0, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 90% 80%,  rgba(255,121,  0, 0.16) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 35% at 55% 50%,  rgba(252, 78,  0, 0.08) 0%, transparent 60%),
     repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 40px,
-      rgba(255,255,255,0.02) 40px,
-      rgba(255,255,255,0.02) 41px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 40px,
-      rgba(255,255,255,0.02) 40px,
-      rgba(255,255,255,0.02) 41px
+      -55deg,
+      transparent 0px, transparent 60px,
+      rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px
     );
   pointer-events: none;
   z-index: 0;
+}
+
+/* 상단 주황 라인 */
+.plc-combined::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FC4E00 30%, #ff7900 70%, transparent);
 }
 
 .plc-combined .container {
@@ -1586,19 +1589,35 @@ html {
 }
 
 .plc-combined-block {
-  padding: 20px 0 40px;
+  padding: 10px 0 50px;
 }
 
+/* 구분선 */
 .plc-combined-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(252,78,0,0.4), transparent);
-  margin: 20px 0 60px;
+  background: linear-gradient(90deg, transparent 0%, rgba(252,78,0,0.5) 30%, rgba(255,121,0,0.5) 70%, transparent 100%);
+  margin: 10px 0 70px;
+  position: relative;
 }
 
-/* 통합 섹션 내 타이틀 색상 */
+.plc-combined-divider::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #FC4E00;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(252,78,0,0.8);
+}
+
+/* 타이틀 */
 .plc-combined .section-label {
   color: #FC4E00;
+  letter-spacing: 3px;
 }
 
 .plc-combined h2,
@@ -1606,6 +1625,7 @@ html {
   color: #ffffff;
 }
 
+/* ── 작업방식 타임라인 ── */
 .plc-combined .workflow-timeline {
   position: relative;
   z-index: 1;
@@ -1614,12 +1634,12 @@ html {
 .workflow-timeline {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 16px;
   position: relative;
-  padding-left: 40px;
-  border-left: 3px solid #FC4E00;
-  max-width: 720px;
-  margin: 0 auto;
+  padding-left: 50px;
+  border-left: 2px solid rgba(252, 78, 0, 0.4);
+  max-width: 680px;
+  margin: 40px auto 0;
 }
 
 /* 카드 */
@@ -1627,57 +1647,70 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 18px 26px;
-  border-radius: 10px;
-  border: 1px solid rgba(252, 78, 0, 0.3);
-  box-shadow: 0 0 10px rgba(252, 78, 0, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(4px);
+  padding: 20px 28px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 2px solid rgba(252, 78, 0, 0.5);
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
+  transform: translateX(-20px);
+  transition: all 0.5s ease;
+}
+
+.step-item:hover {
+  background: rgba(252, 78, 0, 0.07);
+  border-left-color: #FC4E00;
+  box-shadow: 0 0 20px rgba(252, 78, 0, 0.12);
+  transform: translateX(4px);
 }
 
 .step-item.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 /* 원형 포인트 */
 .step-item::before {
   content: "";
   position: absolute;
-  left: -13px;
+  left: -8px;
   top: 50%;
-  transform: translateY(-50%);
-  width: 22px;
-  height: 22px;
+  transform: translateY(-50%) translateX(-50%);
+  width: 14px;
+  height: 14px;
   background: #FC4E00;
   border-radius: 50%;
-  border: 3px solid #141414;
-  box-shadow: 0 0 0 2px #FC4E00;
+  border: 2px solid #0e0e0e;
+  box-shadow: 0 0 8px rgba(252, 78, 0, 0.7);
 }
 
 /* STEP 번호 */
 .step-number {
-  font-family: 'Isamanru';
-  font-weight: bold;
+  font-family: 'Pretendard';
+  font-weight: 800;
   color: #FC4E00;
-  width: 120px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 1rem;
+  width: 80px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+  flex-shrink: 0;
 }
 
 /* 텍스트 */
 .step-text {
-  font-family: 'Isamanru';
-  font-size: 1rem;
-  color: #ffffff;
-  line-height: 1.4;
+  font-family: 'Pretendard';
+  font-size: 15px;
+  font-weight: 500;
+  color: #e0e0e0;
+  line-height: 1.5;
 }
 
-/* 아이콘 */
+/* ── 차별점 카드 ── */
+.plc-feature-cards {
+  margin-top: 40px;
+}
+
 .step-icon {
   font-size: 1.3rem;
 }
