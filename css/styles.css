@@ -714,6 +714,16 @@ a {
   z-index: 1;
 }
 
+/* 사업안내 공통 히어로: 이미지 배경 + 검은 오버레이 */
+.sub-hero.sub-hero-bg {
+  background: #0d1117 url('../images/consulting-hero.png') center/cover no-repeat;
+}
+
+.sub-hero.sub-hero-bg::before {
+  background: rgba(0, 0, 0, 0.5);
+  animation: none;
+}
+
 /* 본문 */
 
 .about-image {
