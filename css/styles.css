@@ -1062,7 +1062,7 @@ a {
 /* Hero - 전장설계 */
 /* ── Consulting Hero ─────────────────────────── */
 .sub-hero.consulting-hero {
-  min-height: 260px;
+  min-height: 380px;
   background: #0d1117 url('../images/consulting-hero.png') center/cover no-repeat;
 }
 
