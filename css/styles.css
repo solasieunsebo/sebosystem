@@ -1547,11 +1547,11 @@ html {
 }
 
 .plc-workflow {
-  background: linear-gradient(135deg, #fff8f5 25%, #ffffff 100%);
+  background: linear-gradient(135deg, #f9fbfd 25%, #ffffff 100%);
   position: relative;
   padding: 60px 20px;
-  border-top: 1px solid #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
+  border-top: 1px solid #dde8f0;
+  border-bottom: 1px solid #dde8f0;
   margin-bottom: 0px;
   overflow: hidden;
 }
@@ -1580,7 +1580,7 @@ html {
   gap: 28px;
   position: relative;
   padding-left: 40px;
-  border-left: 3px solid #f9f9f9;
+  border-left: 3px solid #0057a8;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -1597,9 +1597,9 @@ html {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
-  background: linear-gradient(145deg, #f9f9f9, #f9f9f9);
-  border: 1px solid #f9f9f9;
-  box-shadow: 0 4px 10px rgba(252, 78, 0, 0.08);
+  background: linear-gradient(145deg, #f0f7ff, #ffffff);
+  border: 1px solid #d0e3f7;
+  box-shadow: 0 4px 10px rgba(0, 87, 168, 0.08);
 }
 
 .step-item.visible {
@@ -1616,17 +1616,17 @@ html {
   transform: translateY(-50%);
   width: 22px;
   height: 22px;
-  background: #f9f9f9;
+  background: #0057a8;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px #f9f9f9;
+  box-shadow: 0 0 0 2px #0057a8;
 }
 
 /* STEP 번호 */
 .step-number {
   font-family: 'Isamanru';
   font-weight: normal;
-  color: #FC4E00;
+  color: #0057a8;
   width: 120px;
   display: flex;
   align-items: center;
@@ -1653,11 +1653,10 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(145deg, #fff3ee, #ffffff);
+  background: #ffffff;
   padding: 18px 26px;
   border-radius: 10px;
-  border: 1px solid #ffd5c0;
-  box-shadow: 0 4px 10px rgba(252, 78, 0, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
@@ -1677,16 +1676,16 @@ html {
   transform: translateY(-50%);
   width: 22px;
   height: 22px;
-  background: #FC4E00;
+  background: #1976d2;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 0 0 2px #FC4E00;
+  box-shadow: 0 0 0 2px #1976d2;
 }
 
 /* STEP 번호 */
 .step-number {
   font-weight: bold;
-  color: #FC4E00;
+  color: #1976d2;
   width: 120px;
   display: flex;
   align-items: center;
