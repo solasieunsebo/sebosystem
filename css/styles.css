@@ -1601,7 +1601,8 @@ html {
   color: #FC4E00;
 }
 
-.plc-combined h2 {
+.plc-combined h2,
+.plc-combined .section-title h2 {
   color: #ffffff;
 }
 
