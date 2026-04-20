@@ -508,7 +508,9 @@ a {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% 50%, rgba(255, 100, 0, 0.55) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 70% at 50% 40%, rgba(255, 110, 0, 0.75) 0%, rgba(255, 60, 0, 0.3) 40%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 30% 60%, rgba(255, 140, 0, 0.35) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 60% at 70% 60%, rgba(255, 140, 0, 0.35) 0%, transparent 55%);
   mix-blend-mode: screen;
   z-index: 2;
   pointer-events: none;
