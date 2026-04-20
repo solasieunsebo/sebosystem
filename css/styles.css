@@ -1548,11 +1548,11 @@ html {
 
 /* ── PLC 작업방식 ─────────────────────────────── */
 .plc-workflow {
-  background: linear-gradient(135deg, #fff8f5 25%, #ffffff 100%);
+  background: #f7f7f7;
   position: relative;
   padding: 60px 20px;
-  border-top: 1px solid #ffd5c0;
-  border-bottom: 1px solid #ffd5c0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
   margin-bottom: 0px;
   overflow: hidden;
 }
