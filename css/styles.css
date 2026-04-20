@@ -1556,20 +1556,17 @@ html {
   background: #0e0e0e;
 }
 
-/* 배경: 메시 그라디언트 + 주황 광원 3개 */
+/* 배경: 도트 그리드 + 주황 광원 */
 .plc-combined::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 10% 20%,  rgba(252, 78,  0, 0.22) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 40% at 90% 80%,  rgba(255,121,  0, 0.16) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 35% at 55% 50%,  rgba(252, 78,  0, 0.08) 0%, transparent 60%),
-    repeating-linear-gradient(
-      -55deg,
-      transparent 0px, transparent 60px,
-      rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px
-    );
+    radial-gradient(ellipse 60% 50% at 10% 20%,  rgba(252, 78,  0, 0.25) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 45% at 90% 80%,  rgba(255,121,  0, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 30% at 55% 45%,  rgba(252, 78,  0, 0.10) 0%, transparent 55%),
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.12) 1px, transparent 0);
+  background-size: auto, auto, auto, 28px 28px;
   pointer-events: none;
   z-index: 0;
 }
