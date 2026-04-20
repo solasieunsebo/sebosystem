@@ -1548,131 +1548,101 @@ html {
 
 /* ── PLC 작업방식 ─────────────────────────────── */
 .plc-workflow {
-  background: linear-gradient(160deg, #fff8f5 0%, #ffffff 60%);
+  background: linear-gradient(135deg, #fff8f5 25%, #ffffff 100%);
   position: relative;
-  padding: 80px 20px 100px;
+  padding: 60px 20px;
+  border-top: 1px solid #ffd5c0;
+  border-bottom: 1px solid #ffd5c0;
+  margin-bottom: 0px;
   overflow: hidden;
 }
 
 .plc-workflow::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: url('../images/bg-circuit-w.png') center/cover no-repeat;
-  opacity: 0.05;
+  opacity: 0.06;
   z-index: 0;
 }
 
-.plc-workflow .container {
+.plc-workflow .workflow-timeline {
   position: relative;
   z-index: 1;
 }
 
-.workflow-steps {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-
-.workflow-step {
+.workflow-timeline {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1;
-  min-width: 140px;
-  max-width: 200px;
+  gap: 28px;
   position: relative;
-}
-
-/* 원형 번호 */
-.ws-circle {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #FC4E00, #ff7900);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 20px rgba(252, 78, 0, 0.35);
-  z-index: 1;
-  flex-shrink: 0;
-}
-
-.ws-circle span {
-  font-family: 'Pretendard';
-  font-weight: 800;
-  font-size: 22px;
-  color: #fff;
-}
-
-/* 연결선 */
-.ws-connector {
-  position: absolute;
-  top: 29px;
-  left: calc(50% + 30px);
-  width: calc(100% - 60px);
-  height: 2px;
-  background: linear-gradient(90deg, #FC4E00, #ffb380);
+  padding-left: 40px;
+  border-left: 3px solid #FC4E00;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* 카드 */
-.ws-card {
-  margin-top: 18px;
-  background: #fff;
+.step-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(145deg, #fff3ee, #ffffff);
+  padding: 18px 26px;
+  border-radius: 10px;
   border: 1px solid #ffd5c0;
-  border-radius: 12px;
-  padding: 16px 14px;
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(252, 78, 0, 0.08);
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(252, 78, 0, 0.08);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
 }
 
-.ws-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(252, 78, 0, 0.15);
+.step-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.ws-label {
+/* 원형 포인트 */
+.step-item::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background: #FC4E00;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #FC4E00;
+}
+
+/* STEP 번호 */
+.step-number {
   font-family: 'Isamanru';
-  font-size: 11px;
+  font-weight: bold;
   color: #FC4E00;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
 }
 
-.ws-text {
-  font-family: 'Pretendard';
-  font-size: 14px;
-  font-weight: 600;
-  color: #282828;
-  line-height: 1.5;
+/* 텍스트 */
+.step-text {
+  font-family: 'Isamanru';
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-  .workflow-steps {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-  .workflow-step {
-    flex-direction: row;
-    max-width: 100%;
-    width: 100%;
-    gap: 16px;
-    align-items: center;
-  }
-  .ws-connector {
-    display: none;
-  }
-  .ws-card {
-    margin-top: 0;
-    text-align: left;
-    flex: 1;
-  }
+/* 아이콘 */
+.step-icon {
+  font-size: 1.3rem;
 }
 
 .plc-brands {
