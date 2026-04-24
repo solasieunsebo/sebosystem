@@ -1774,7 +1774,7 @@ html {
 /* 번호 배지 */
 .step-badge {
   font-family: 'Pretendard';
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
   color: #FC4E00;
   min-width: 48px;
@@ -1798,7 +1798,7 @@ html {
 
 .step-title {
   font-family: 'Pretendard';
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.4;
@@ -1807,7 +1807,7 @@ html {
 
 .step-desc {
   font-family: 'Pretendard';
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #999999;
   line-height: 1.7;
