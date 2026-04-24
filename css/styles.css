@@ -1830,15 +1830,15 @@ html {
 }
 
 .pfc-icon {
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   border-radius: 10px;
   background: linear-gradient(135deg, #FC4E00, #ff7900);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Pretendard';
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 900;
   color: #fff;
   flex-shrink: 0;
@@ -1847,7 +1847,7 @@ html {
 
 .pfc-body h3 {
   font-family: 'Pretendard';
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 8px;
@@ -1855,7 +1855,7 @@ html {
 
 .pfc-body p {
   font-family: 'Pretendard';
-  font-size: 14px;
+  font-size: 16px;
   color: #999999;
   line-height: 1.7;
   margin: 0;
