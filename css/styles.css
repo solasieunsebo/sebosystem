@@ -567,15 +567,15 @@ a {
 }
 
 .hero-bar-icon {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
   color: var(--primary-orange);
 }
 
 .hero-bar-text {
   font-family: 'Pretendard';
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.02em;
   white-space: nowrap;
