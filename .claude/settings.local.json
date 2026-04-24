@@ -10,7 +10,11 @@
       "Bash(gh api:*)",
       "Bash(grep -n \"^a,\\\\|^a {\" /c/Users/eulse/OneDrive/Desktop/sebosystem/css/styles.css)",
       "Bash(grep *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(curl *)",
+      "Bash(ls CNAME .github)",
+      "Bash(cat CNAME)",
+      "Bash(git rm *)"
     ]
   }
 }
